@@ -10,21 +10,6 @@
     src: url(./fonts/Play-Bold.ttf);
 }
 
-@font-face {
-    font-family: poppinsregular;
-    src: url(./fonts/Poppins-Regular.ttf);
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: poppinsmedium;
-    src: url(./fonts/Poppins-Medium.ttf);
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 /* width */
 ::-webkit-scrollbar {
@@ -71,9 +56,10 @@ body {
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    margin: 50px auto 120px auto;
+    margin: 50px auto 80px auto;
+    max-width: 1080px;
 }
 
 header a {
@@ -97,6 +83,15 @@ header a {
     margin: 0 40px
 }
 
+#languages a img {
+    transition: filter 0.2s ease-in-out;
+}
+
+#languages a:hover img {
+    filter: brightness(130%);
+    transition: filter 0.2s ease-in-out;
+}
+
 h1,h2,h3,h4 {
     margin: 0;
 }
@@ -117,19 +112,27 @@ h2 {
 }
 
 h3 {
-    font-family: poppinsregular;
+    font-family: playbold;
     font-size: 24px;
     line-height: 34px;
     color: #008080;
     margin-top: 10px;
 }
 
-h4 {
+/* h3.english {
     font-family: poppinsregular;
+} */
+
+h4 {
+    font-family: manroperegular;
     font-size: 16px;
     line-height: 22px;
     color: #587441;
 }
+
+/* h4.english {
+    font-family: poppinsregular;
+} */
 
 
 #apps {
@@ -163,14 +166,18 @@ h4 {
 }
 
 .app-description p {
+    font-family: manroperegular;
     max-width: 314px;
     padding: 16px;
     margin: 0;
     color: white;
-    font-family: poppinsregular;
     font-size: 16px;
     line-height: 22px;
 }
+
+/* .app-description p.english {
+    font-family: poppinsregular;
+} */
 
 .app a:nth-of-type(1) {
     position: relative;
