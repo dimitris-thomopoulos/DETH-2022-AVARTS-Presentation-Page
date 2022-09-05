@@ -124,6 +124,7 @@ h3 {
 } */
 
 h4 {
+    max-width: 346px;
     font-family: manroperegular;
     font-size: 16px;
     line-height: 22px;
@@ -153,7 +154,7 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 10px 50px;
+    padding: 0 10px 60px;
 }
 
 .app-description {
@@ -263,4 +264,17 @@ video {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     transition: border-radius 0.5s ease-in-out;
+}
+
+#apps > div > p:hover, #apps > div > p br:hover {
+    cursor: default !important;
+}
+
+#apps > div:nth-of-type(7) > p:hover, #apps > div:nth-of-type(7) > p br:hover {
+    cursor: initial !important;
+}
+
+#apps > div:nth-of-type(8), #apps > div:nth-of-type(9) {
+    z-index: -20;
+    visiblity: invisible;
 }
