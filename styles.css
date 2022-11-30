@@ -74,13 +74,13 @@ header a {
 
 #separator {
     background: linear-gradient(rgba(0, 128, 128, 0),
-    rgba(0, 128, 128, 0.5574),
+    rgb(0 128 128 / 25%),
     rgba(0, 128, 128, 1),
-    rgba(0, 128, 128, 0.5574),
+    rgb(0 128 128 / 25%),
     rgba(0, 128, 128, 0));
     width: 1px;
-    height: 110px;
-    margin: 0 40px
+    height: 199px;
+    margin: 0 40px;
 }
 
 #languages a img {
